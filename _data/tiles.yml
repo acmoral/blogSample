@@ -1,0 +1,14 @@
+# _data/tile.yml
+- title: "Data Science"
+  description: "Explore data insights with machine learning."
+  image: "/assets/images/pic01.jpg"
+  style : "style1"
+- title: "Physics"
+  description: "Dive into the wonders of the universe."
+  image: "/assets/images/pic02.jpg"
+  style : "style2"
+
+- title: "Programming"
+  description: "Build powerful applications and tools."
+  image: "/assets/images/pic03.jpg"
+  style : "style3"

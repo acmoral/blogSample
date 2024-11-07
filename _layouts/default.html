@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>{{page.title}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					{% include header.html %}
+
+				<!-- Menu -->
+					{% include navbar.html %}
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								{{content}}
+							</header>
+							<section class="tiles">
+								{% for tile in site.posts %}
+									{% include tile.html title=tile.title description=tile.description image=tile.image style=tile.style url = tile.url %}
+								{% endfor %}
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+				{% include footer.html %}
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

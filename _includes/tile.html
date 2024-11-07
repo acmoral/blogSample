@@ -1,0 +1,12 @@
+<!-- _includes/tile.html -->
+  <article class="{{include.style}}">
+    <span class="image">
+      <img  src="{{ include.image }}" alt="{{ include.title }}" class="tile-image" />
+    </span>
+    <a href="{{include.url | relative_url}}"">
+      <h2 class="tile-title">{{ include.title }}</h2>
+      <div class="content">
+        <p>{{ include.description }}</p>
+      </div>
+    </a>
+  </article>
